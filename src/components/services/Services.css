@@ -1,0 +1,158 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+  transition: 0.5s;
+}
+
+.services-name {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-name h1 {
+  color: #211F54;
+  font-family: "Roboto";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57.984px;
+  transition: 0.5s;
+}
+
+.services-name a {
+  color: #211F54;
+  padding-top: 15px;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.998px;
+  transition: 0.5s;
+}
+
+
+
+
+.about-card {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 42px;
+  flex-shrink: 0;
+  margin-top: 100px;
+  transition: 1s;
+}
+
+
+.about-cardst {
+  max-width: 374px;
+  height: 500px;
+  background: #f0f0f0;
+  flex-shrink: 0;
+  border-radius: 13px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-cardst:hover {
+  border: 2px solid #f0f0f0;
+  background: none;
+}
+
+.about-cardst img {
+  width: 240px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.about-cardst h1 {
+  color: #211F54;
+  text-align: center;
+  font-family: "Roboto";
+  padding-top: 30px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36.008px;
+}
+
+.about-cardst p {
+  color: #6E7191;
+  text-align: center;
+  font-family: "Roboto";
+  padding-top: 10px;
+  font-size: 18px;
+  padding-bottom: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30.006px;
+}
+
+@media (max-width: 1225px) {
+  .about-card {
+    gap: 40px;
+  }
+
+  .about-cardst {
+    max-width: 300px;
+    height: 380px;
+  }
+
+  .about-cardst img {
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  .about-cardst h1 {
+    font-size: 23px;
+  }
+
+  .about-cardst p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-cardst {
+    max-width: 300px;
+    height: 400px;
+  }
+
+  .about-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .services {
+    padding-top: 80px;
+  }
+
+  .services-name h1 {
+    font-size: 30px;
+  }
+
+  .services-name a {
+    font-size: 15px;
+  }
+
+  .about-cardst {
+    max-width: 300px;
+    height: 420px;
+  }
+
+  .about-card {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

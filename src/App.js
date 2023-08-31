@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import HomeP from "./pages/HomePage";
+// import { createElement } from "react";
+
+// const h1 = createElement("h1", null, "Hello ReactJs");
+// const p = createElement(
+//   "p",
+//   null,
+//   "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, sunt."
+// );
+// const element = createElement("div", { className: "app" }, h1, p);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <HomeP />;
+
+  // return (
+  //   <div className="app">
+  //     <h1>Hello ReactJs</h1>
+  //     <p>
+  //       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, sunt.
+  //     </p>
+  //   </div>
+  // );
+
+  // return element;
 }
 
 export default App;

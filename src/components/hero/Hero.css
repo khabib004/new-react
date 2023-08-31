@@ -1,0 +1,217 @@
+.hero_title {
+  display: flex;
+}
+
+.title-name {
+  display: flex;
+  max-width: 608px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-shrink: 0;
+  transition: 1s;
+}
+
+.title-name h1 {
+  color: #211F54;
+  font-family: "Roboto";
+  padding-top: 220px;
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 73.984px;
+  transition: 1s;
+}
+
+.title-name p {
+  color: #6E7191;
+  font-family: "Roboto";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30.006px;
+  transition: 1s;
+}
+
+.title-button {
+  display: flex;
+  padding-right: 0px;
+  align-items: flex-start;
+  gap: 28px;
+  flex-shrink: 0;
+  transition: 1s;
+}
+
+.title-button button {
+  border-radius: 14px;
+  background: #0075FF;
+  border: none;
+  transition: 0.5s;
+  height: 72px;
+}
+
+.title-button button:hover {
+  background: none;
+}
+
+.title-button button:hover a {
+  border: 1px solid #0075FF;
+  border-radius: 14px;
+  color: black;
+}
+
+.title-button button a {
+  color: #FFF;
+  text-align: center;
+  font-family: "Roboto";
+  padding: 26px 38px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  transition: 0.5s;
+}
+
+.contak-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  padding-top: 10px;
+}
+
+.contak-number h3 {
+  color: #6E7191;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.contak-number a {
+  color: #211F54;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36.008px;
+}
+
+.title-image img {
+  width: 600px;
+  height: auto;
+  transition: 1s;
+}
+
+@media (max-width: 1260px) {
+  .title-image img {
+    width: 470px;
+  }
+
+  .title-name h1 {
+    padding-top: 100px;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1115px) {
+  .title-image img {
+    width: 370px;
+  }
+
+  .title-name h1 {
+    padding-top: 50px;
+    font-size: 40px;
+  }
+
+  .title-name {
+    max-width: 508px;
+    gap: 20px;
+  }
+
+  .title-name p {
+    font-size: 16px;
+  }
+
+  .title-button button {
+    height: 55px;
+    margin-top: 15px;
+  }
+
+  .title-button button a {
+    padding: 18px 25px;
+    font-size: 16px;
+  }
+
+  .title-button svg {
+    width: 70px;
+  }
+}
+
+@media (max-width: 915px) {
+  .hero_title {
+    display: grid;
+  }
+
+  .title-name {
+    max-width: 100%;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .title-name h1 {
+    padding-top: 50px;
+    font-size: 40px;
+    margin: 0 auto;
+  }
+
+  .title-image img {
+    width: 100%;
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 535px) {
+  .title-button {
+    gap: 15px;
+  }
+  .title-button button {
+    height: 45px;
+    margin-top: 20px;
+  }
+
+  .title-button button a {
+    padding: 18px 17px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.5s;
+  }
+
+  .title-button svg {
+    width: 50px;
+  }
+
+  .contak-number h3 {
+    font-size: 12px;
+  }
+
+  .contak-number a {
+    color: #211F54;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36.008px;
+  }
+}
+
+@media (max-width: 535px) {
+    .title-button {
+        display: grid;
+        gap: 1px;
+      }
+}
